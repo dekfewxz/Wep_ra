@@ -1,169 +1,171 @@
-
 <!DOCTYPE html>
 <html xml:th="http://www.thymeleaf.org/" class="loading" lang="en" data-textdirection="ltr">
 <style>
-    body{
-  background:#eee;
-}
+    body {
+        background: #eee;
+    }
 
-.bgWhite{
-  background:white;
-  box-shadow:0px 3px 6px 0px #cacaca;
-}
+    .bgWhite {
+        background: white;
+        box-shadow: 0px 3px 6px 0px #cacaca;
+    }
 
-.title{
-  font-weight:600;
-  margin-top:20px;
-  font-size:24px
-}
+    .title {
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 24px
+    }
 
-.customBtn{
-  border-radius:0px;
-  padding:10px;
-}
+    .customBtn {
+        border-radius: 0px;
+        padding: 10px;
+    }
 
-form input{
-  display:inline-block;
-  width:50px;
-  height:50px;
-  text-align:center;
-}
+    form input {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
 </style>
+
 <head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
-</head>
-<body>
 
-<div class="container">
-    <h1 class="text-center mb-5 text-uppercase text-muted">Dataoen Asia</h1>
-    <div class="row">
-        <div class="col-sm-10 bg-light border rounded py-3 offset-sm-1">
-            <h2 class="text-center">Register Account</h2>
-            <form action="/login.html">
-                <div class="form-group">
-                    <label for="fname">First Name:</label>
-                    <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-                </div>
-                 <div class="form-group">
-                    <label for="lname">Last Name:</label>
-                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="text" class="form-control" id="email" placeholder="Enter E-mail" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-                </div>
-                <div class="form-group">
-                    <label for="cpwd">Confirm Password:</label>
-                    <input type="password" class="form-control" id="cpwd" placeholder="Enter Confirm Password" name="cpwd">
-                </div>
-                <div class="container register">
-                    <p>You Have Account ? Please <a href="login.html"> Login</a></p>
-                </div>
-               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                Next
-                </button>
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-xl" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Ransomware Readiness Tutorial</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">                    
-                                <div class="container">
-                                    <div class="row justify-content-md-center">
-                                        <div class="col-md-4 text-center">
-                                        <div class="row">
-                                            <div class="col-sm-12 mt-5 bgWhite">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5 text-uppercase text-muted">Dataone Asia</h1>
+        <div class="row">
+            <div class="col-sm-10 bg-light border rounded py-3 offset-sm-1">
+                <form action="/login.html">
+                    <div class="form-group">
+                        <label for="fname">First Name:</label>
+                        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter E-mail" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpwd">Confirm Password:</label>
+                        <input type="password" class="form-control" id="cpwd" placeholder="Enter Confirm Password"
+                            name="cpwd">
+                    </div>
+                    <div class="container register">
+                        <p>You Have Account ? Please <a href="login.html"> Login</a></p>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target=".bd-example-modal-sm">Register</button>
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="row justify-content-md-center">
+                                    <div class="row">
+                                        <div class="col-sm-12 mt-5 bgWhite center">
                                             <div class="title">
                                                 Verify OTP
                                             </div>
-                                            
+                                            <br>
                                             <form action="" class="mt-5">
-                                                <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1 >
-                                                <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1 >
-                                                <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1 >
-                                                <input class="otp" type="text" oninput='digitValidate(this)'onkeyup='tabChange(4)' maxlength=1 >
+                                                <center>
+                                                    <input class="otp" type="text" oninput='digitValidate(this)'
+                                                        onkeyup='tabChange(1)' maxlength=1>
+                                                    <input class="otp" type="text" oninput='digitValidate(this)'
+                                                        onkeyup='tabChange(2)' maxlength=1>
+                                                    <input class="otp" type="text" oninput='digitValidate(this)'
+                                                        onkeyup='tabChange(3)' maxlength=1>
+                                                    <input class="otp" type="text" oninput='digitValidate(this)'
+                                                        onkeyup='tabChange(4)' maxlength=1>
+                                                    <input class="otp" type="text" oninput='digitValidate(this)'
+                                                        onkeyup='tabChange(5)' maxlength=1>
+                                                </center>
+
                                             </form>
                                             <hr class="mt-4">
-                                            <button class='btn btn-primary btn-block mt-4 mb-4 customBtn'>Verify</button>
-                                            </div>
-                                        </div>
+                                            <button
+                                                class='btn btn-primary btn-block mt-4 mb-4 customBtn'>Verify</button>
+                                            <br>
                                         </div>
                                     </div>
-                                </div>  
-                            <div class="modal-footer">
+                                </div>
+                            </div>
                         </div>
                     </div>
-            </form>
+            </div>
         </div>
+        </form>
+
     </div>
-</div>
+    </div>
+    </div>
 
+    <!-- Code injected by live-server -->
+    <script>
+        let digitValidate = function (ele) {
+            console.log(ele.value);
+            ele.value = ele.value.replace(/[^0-9]/g, '');
+        }
 
-<!-- Code injected by live-server -->
-<script>
-    let digitValidate = function(ele){
-  console.log(ele.value);
-  ele.value = ele.value.replace(/[^0-9]/g,'');
-}
-
-let tabChange = function(val){
-    let ele = document.querySelectorAll('input');
-    if(ele[val-1].value != ''){
-      ele[val].focus()
-    }else if(ele[val-1].value == ''){
-      ele[val-2].focus()
-    }   
- }
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
+        let tabChange = function (val) {
+            let ele = document.querySelectorAll('input');
+            if (ele[val - 1].value != '') {
+                ele[val].focus()
+            } else if (ele[val - 1].value == '') {
+                ele[val - 2].focus()
+            }
+        }
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
 	// ]]>
-</script>
+    </script>
 </body>
 
 </html>
